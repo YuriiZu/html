@@ -1,7 +1,19 @@
-.socialicons {
-    font-size: 60px;
-    color: white;
+.socialicons a {
+    font-size: 20px;
+    color:turquoise;
+    vertical-align: baseline;
     
+   }
+#home {
+    background-image:url(/img/background.webp);
+    color: white
+}
+#home h1 {
+    font-size: 100px;
+}
+.menu a {
+    font-size: 30px;
+    color: white;
+    vertical-align: baseline;
 
 }
-#home 
