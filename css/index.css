@@ -1,19 +1,81 @@
-.socialicons a {
-    font-size: 20px;
-    color:turquoise;
-    vertical-align: baseline;
-    
-   }
-#home {
-    background-image:url(/img/background.webp);
-    color: white
-}
-#home h1 {
-    font-size: 100px;
-}
-.menu a {
-    font-size: 30px;
-    color: white;
-    vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+:root {
+    --main-color: white;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.socialicons a {
+    width: 30px;
+    height: 30px;
+    color: #03c1cf;
+    text-decoration: none;
+}
+
+.socialicons a:hover {
+    color: darkcyan;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#home {
+    background-image: url(/img/background.webp);
+    background-position: center;
+    background-size: cover;
+    color: var(--main-color);
+}
+
+#home h1 {
+    font-size: 60px;
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+#home img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#home p:last-of-type {
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+}
+
+#home p:first-of-type {
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+}
+
+.menu a {
+    color: var(--main-color);
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu a:hover {
+    color: violet;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
 }
