@@ -10,6 +10,16 @@
     margin: 0;
 }
 
+body {
+    max-width: 1980px;
+    margin: auto;
+}
+
+.socialicons {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .socialicons a {
     width: 30px;
     height: 30px;
@@ -21,11 +31,9 @@
     color: darkcyan;
 }
 
-.socialicons {
-    display: flex;
-    justify-content: flex-end;
 
-}
+
+
 
 #home {
     background-image: url(../img/background.webp);
@@ -35,29 +43,32 @@
 }
 
 #home h1 {
-    font-size: 60px;
+    font-size: 3rem;
     font-family: 'Abril Fatface', cursive;
     color: var(--main-color);
+    font-weight: 400;
 
 }
 
-#home img {
+.logoimage {
     width: 60px;
     height: 60px;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
+    justify-content: flex-start;
 }
 
 #home p:last-of-type {
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     color: var(--main-color);
+    font-weight: 400;
 }
 
 #home p:first-of-type {
     font-size: 12px;
     font-family: 'Lato', sans-serif;
     color: var(--main-color);
+    font-weight: 400;
 }
 
 .menu a {
@@ -65,12 +76,7 @@
     font-size: 16px;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-
+    display: inline-flex;
 }
 
 .menu a:hover {
@@ -80,5 +86,35 @@
 
 .logo {
     display: flex;
+    justify-content: center;
     flex-direction: column;
+    width: 327px;
+    height: 498px;
+    margin-left: 40px;
+    flex-wrap: wrap;
+    gap: 15px;
+
+
+
+}
+
+#home button {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    background-color: transparent;
+    color: var(--main-color);
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.41);
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border-style: solid;
+}
+
+#home button:hover {
+    color: #03c1cf;
+    border-color: #03c1cf;
 }
