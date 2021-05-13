@@ -31,7 +31,6 @@
     background-image: url(../img/background.webp);
     background-position: center;
     background-size: cover;
-    color: var(--main-color);
 }
 
 #home h1 {
