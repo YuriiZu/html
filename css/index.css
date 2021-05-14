@@ -10,11 +10,6 @@
     margin: 0;
 }
 
-body {
-    max-width: 1980px;
-    margin: auto;
-}
-
 .socialicons {
     display: flex;
     justify-content: flex-end;
@@ -31,10 +26,6 @@ body {
     color: darkcyan;
 }
 
-
-
-
-
 #home {
     background-image: url(../img/background.webp);
     background-position: center;
@@ -43,7 +34,7 @@ body {
 }
 
 #home h1 {
-    font-size: 3rem;
+    font-size: 3em;
     font-family: 'Abril Fatface', cursive;
     color: var(--main-color);
     font-weight: 400;
@@ -58,14 +49,14 @@ body {
 }
 
 #home p:last-of-type {
-    font-size: 18px;
+    font-size: 1em;
     font-family: 'Lato', sans-serif;
     color: var(--main-color);
     font-weight: 400;
 }
 
 #home p:first-of-type {
-    font-size: 12px;
+    font-size: 0.7em;
     font-family: 'Lato', sans-serif;
     color: var(--main-color);
     font-weight: 400;
@@ -73,7 +64,7 @@ body {
 
 .menu a {
     color: var(--main-color);
-    font-size: 16px;
+    font-size: 1em;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     display: inline-flex;
