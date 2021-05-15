@@ -9,11 +9,16 @@
     padding: 0;
     margin: 0;
 }
+body {
+    max-width: 980px;
+    margin: auto;
+}
 
 .socialicons {
     display: flex;
     justify-content: flex-end;
 }
+
 
 .socialicons a {
     width: 30px;
@@ -26,12 +31,18 @@
     color: darkcyan;
 }
 
-#home {
-    background-image: url(../img/background.webp);
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(../img/background.webp);
     background-position: center;
     background-size: cover;
     color: var(--main-color);
 }
+#home {
+    max-width: 980px;
+    margin: auto;
+}
+
 
 #home h1 {
     font-size: 3em;
@@ -44,8 +55,6 @@
 .logoimage {
     width: 60px;
     height: 60px;
-    display: inline-flex;
-    justify-content: flex-start;
 }
 
 #home p:last-of-type {
@@ -62,18 +71,6 @@
     font-weight: 400;
 }
 
-.menu a {
-    color: var(--main-color);
-    font-size: 1em;
-    font-family: 'Lato', sans-serif;
-    text-decoration: none;
-    display: inline-flex;
-}
-
-.menu a:hover {
-    color: violet;
-    font-weight: bold;
-}
 
 .logo {
     display: flex;
@@ -84,13 +81,10 @@
     margin-left: 40px;
     flex-wrap: wrap;
     gap: 15px;
-
-
-
 }
 
-#home button {
-    display: inline-block;
+#home button-news {
+    display: block;
     text-align: center;
     position: relative;
     width: 160px;
@@ -105,7 +99,7 @@
     border-style: solid;
 }
 
-#home button:hover {
+#home button-news:hover {
     color: #03c1cf;
     border-color: #03c1cf;
 }
