@@ -3,44 +3,34 @@
 
 :root {
     --main-color: white;
+    --nav-color: #03c1cf;
+    --soial-hover-color: darkcyan;
+    --main-font: 'Lato', sans-serif;
 }
 
 * {
     padding: 0;
     margin: 0;
 }
-body {
-    max-width: 980px;
-    margin: auto;
-}
 
 .socialicons {
     display: flex;
     justify-content: flex-end;
 }
-
-
 .socialicons a {
     width: 30px;
     height: 30px;
-    color: #03c1cf;
+    color: var(--nav-color);
     text-decoration: none;
 }
-
 .socialicons a:hover {
-    color: darkcyan;
+    color: var(--soial-hover-color);
 }
-
-
 header{
     background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(../img/background.webp);
     background-position: center;
     background-size: cover;
     color: var(--main-color);
-}
-#home {
-    max-width: 980px;
-    margin: auto;
 }
 
 
@@ -59,14 +49,19 @@ header{
 
 #home p:last-of-type {
     font-size: 1em;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--main-font);
     color: var(--main-color);
     font-weight: 400;
+}
+.navbar-nav a:hover {
+    color: var(--nav-color) !important;
+    
+}
 }
 
 #home p:first-of-type {
     font-size: 0.7em;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--main-font);
     color: var(--main-color);
     font-weight: 400;
 }
@@ -83,7 +78,7 @@ header{
     gap: 15px;
 }
 
-#home button-news {
+.button-news {
     display: block;
     text-align: center;
     position: relative;
@@ -94,12 +89,12 @@ header{
     color: var(--main-color);
     border-width: 3px;
     border-color: rgba(255, 255, 255, 0.41);
-    font-family: 'Lato', sans-serif;
+    font-family: var(--main-font);
     font-weight: 700;
     border-style: solid;
 }
 
-#home button-news:hover {
-    color: #03c1cf;
-    border-color: #03c1cf;
+.button-news:hover {
+    color: var(--nav-color);
+    border-color: var(--nav-color);
 }
