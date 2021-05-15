@@ -13,9 +13,34 @@
     margin: 0;
 }
 
+@media (min-width:600px) {
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .logo {
+    
+    }
+}
+
+    header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(../img/background.webp);
+        background-position: center;
+        background-size: cover;
+        color: var(--main-color);
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
 .socialicons {
     display: flex;
-    justify-content: flex-end;
+    margin-top: 20px;
 }
 .socialicons a {
     width: 30px;
@@ -26,15 +51,10 @@
 .socialicons a:hover {
     color: var(--soial-hover-color);
 }
-header{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.2)), url(../img/background.webp);
-    background-position: center;
-    background-size: cover;
-    color: var(--main-color);
-}
 
 
-#home h1 {
+
+.logo h1 {
     font-size: 3em;
     font-family: 'Abril Fatface', cursive;
     color: var(--main-color);
@@ -47,7 +67,7 @@ header{
     height: 60px;
 }
 
-#home p:last-of-type {
+.logo p:last-of-type {
     font-size: 1em;
     font-family: var(--main-font);
     color: var(--main-color);
@@ -71,11 +91,11 @@ header{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 327px;
-    height: 498px;
-    margin-left: 40px;
+    max-width: 300px;
+    min-height: 500px;
     flex-wrap: wrap;
     gap: 15px;
+    margin-left: 40px;
 }
 
 .button-news {
