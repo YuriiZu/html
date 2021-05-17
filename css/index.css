@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); :root {
     --main-color: white;
     --nav-color: #03c1cf;
     --soial-hover-color: darkcyan;
@@ -13,56 +10,64 @@
     margin: 0;
 }
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
     .logo {
         display: block;
         margin-left: 500px;
-
     }
-
+    .features {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
-    header{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4)), url(../img/background.webp);
-        background-position: center;
-        background-size: cover;
-        color: var(--main-color);
-        min-height: 400px;
-        width: 100%;
-    }
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4)), url(../img/background.webp);
+    background-position: center;
+    background-size: cover;
+    color: var(--main-color);
+    min-height: 400px;
+    width: 100%;
+}
 
-    .menu {
-        display: flex;
-        justify-content: space-between;
-    }
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
 
 .socialicons {
     display: flex;
     margin-top: 20px;
 }
+
 .socialicons a {
     width: 30px;
     height: 30px;
     color: var(--nav-color);
     text-decoration: none;
 }
+
 .socialicons a:hover {
     color: var(--soial-hover-color);
 }
 
-
-
 .logo h1 {
-    font-size: 3em;
+    font-size: 3rem;
     font-family: 'Abril Fatface', cursive;
     color: var(--main-color);
     font-weight: 400;
-
 }
 
 .logoimage {
     width: 60px;
     height: 60px;
+}
+
+.logo p:first-of-type {
+    font-size: 0.7em;
+    font-family: var(--main-font);
+    color: var(--main-color);
+    font-weight: 200;
 }
 
 .logo p:last-of-type {
@@ -71,19 +76,10 @@
     color: var(--main-color);
     font-weight: 400;
 }
+
 .navbar-nav a:hover {
     color: var(--nav-color) !important;
-    
 }
-}
-
-#home p:first-of-type {
-    font-size: 0.7em;
-    font-family: var(--main-font);
-    color: var(--main-color);
-    font-weight: 400;
-}
-
 
 .logo {
     display: flex;
@@ -117,8 +113,7 @@
     border-color: var(--nav-color);
 }
 
-#features
-{
+.features {
     background-color: #161721;
     text-align: center;
     color: var(--main-color);
@@ -126,19 +121,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
 }
 
-.features img 
-{
+.features img {
     height: 50px;
     width: 50px;
     margin-top: 40px;
 }
+
 .features h3 {
     font-size: 1.5rem;
 }
+
 .features p {
     font-weight: 100;
 }
