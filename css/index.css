@@ -3,6 +3,7 @@
     --nav-color: #03c1cf;
     --soial-hover-color: darkcyan;
     --main-font: 'Lato', sans-serif;
+    --secondary-font: 'Abril Fatface', cursive;
 }
 
 * {
@@ -10,24 +11,12 @@
     margin: 0;
 }
 
-@media (min-width: 600px) {
-    .logo {
-        display: block;
-        margin-left: 500px;
-    }
-    .features {
-        display: flex;
-        flex-direction: row;
-    }
-}
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4)), url(../img/background.webp);
     background-position: center;
     background-size: cover;
     color: var(--main-color);
-    min-height: 400px;
-    width: 100%;
+    max-height: 650px;
 }
 
 .menu {
@@ -35,9 +24,24 @@ header {
     justify-content: space-between;
 }
 
+.menu nav {
+    margin-left: 25px;
+}
+
+.navbar {
+    position: relative;
+}
+
+.navbar-toggler {
+    position: absolute;
+    left: 90px;
+    top: 15px;
+}
+
 .socialicons {
     display: flex;
     margin-top: 20px;
+    margin-left: auto;
 }
 
 .socialicons a {
@@ -51,16 +55,26 @@ header {
     color: var(--soial-hover-color);
 }
 
+.logoimage {
+    width: 60px;
+    height: 60px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 300px;
+    min-height: 500px;
+    flex-wrap: wrap;
+    margin-left: 40px;
+}
+
 .logo h1 {
     font-size: 3rem;
     font-family: 'Abril Fatface', cursive;
     color: var(--main-color);
     font-weight: 400;
-}
-
-.logoimage {
-    width: 60px;
-    height: 60px;
 }
 
 .logo p:first-of-type {
@@ -81,23 +95,12 @@ header {
     color: var(--nav-color) !important;
 }
 
-.logo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    max-width: 300px;
-    min-height: 500px;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-left: 40px;
-}
-
 .button-news {
     display: block;
     text-align: center;
     position: relative;
-    width: 160px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     font-size: 16px;
     background-color: transparent;
     color: var(--main-color);
@@ -135,4 +138,64 @@ header {
 
 .features p {
     font-weight: 100;
+}
+
+@media (min-width: 600px) {
+    .features {
+        position: relative;
+    }
+
+    .feature-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 100px;
+    }
+
+    . }
+
+#tickets {
+    background: linear-gradient(0deg, #301d55 0%, #161721 100%);
+    color: var(--main-color);
+    position: relative;
+}
+
+#tickets img {
+    max-width: 180px;
+    max-height: 180px;
+    margin-left: 70px;
+}
+
+.tickets-text {
+    text-align: center;
+}
+
+.tickets-text h2 {
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+}
+
+.tickets-text p {
+    font-family: var(--main-font);
+}
+
+.ticket-cards h5 {
+    color: var(--nav-color);
+}
+
+.ticket-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .ticket-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 }
