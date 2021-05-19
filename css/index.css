@@ -16,7 +16,7 @@ header {
     background-position: center;
     background-size: cover;
     color: var(--main-color);
-    max-height: 650px;
+    max-height: 700px;
 }
 
 .menu {
@@ -153,7 +153,7 @@ header {
         margin-right: 100px;
     }
 
-    . }
+     }
 
 #tickets {
     background: linear-gradient(0deg, #301d55 0%, #161721 100%);
@@ -192,10 +192,31 @@ header {
     text-align: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 990px) {
     .ticket-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 }
+
+.gallery {
+    background: linear-gradient(0deg, rgb(11, 11, 22) 0%, rgb(48, 29, 85) 100%);
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 3rem;
+    font-family: var(--secondary-font);
+    color: var(--main-color);
+}
+.gallery p {
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+  #carousel {
+      margin: auto;
+      max-height: 800px;
+      max-width: 800px;
+  }
