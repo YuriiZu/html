@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); :root {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); 
+
+:root {
     --main-color: white;
     --nav-color: #03c1cf;
     --soial-hover-color: darkcyan;
@@ -10,6 +12,7 @@
     padding: 0;
     margin: 0;
 }
+
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4)), url(../img/background.webp);
@@ -244,9 +247,7 @@ header {
     color: var(--nav-color);
 }
 
-.stars {
-    margin-top: 50px;
-}
+
 
 
     @media (min-width: 900px)  {
@@ -257,4 +258,30 @@ header {
     justify-content: space-around;
     align-items: center;
     } 
+}
+
+#news {
+    background:rgb(23, 16, 41);
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--main-font);
+    margin-top: -20px;
+}
+
+#news img {
+    max-width: auto;
+    max-height: auto;
+}
+
+#news h2 {
+    font-family: var(--secondary-font);
+    font-size: 3rem;
+}
+
+#news h5 {
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+.latest-news p {
+    color: var(--nav-color);
 }
