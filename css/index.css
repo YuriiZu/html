@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); 
-
-:root {
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap'); :root {
     --main-color: white;
     --nav-color: #03c1cf;
     --soial-hover-color: darkcyan;
@@ -12,7 +10,6 @@
     padding: 0;
     margin: 0;
 }
-
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.4)), url(../img/background.webp);
@@ -232,6 +229,7 @@ header {
     font-family: var(--main-font);
     padding-top: 30px;
 }
+
 #line-up img {
     max-width: 200px;
     max-height: 200px;
@@ -245,25 +243,23 @@ header {
 #line-up h5 {
     font-family: var(--secondary-font);
 }
+
 .stars p:first-of-type {
     color: var(--nav-color);
 }
 
-
-
-
-    @media (min-width: 900px)  {
+@media (min-width: 900px) {
     .stars {
-    display: grid;
-    grid-template-columns: 450px 450px;
-    grid-template-rows: 1fr 1fr;
-    justify-content: space-around;
-    align-items: center;
-    } 
+        display: grid;
+        grid-template-columns: 450px 450px;
+        grid-template-rows: 1fr 1fr;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 
 #news {
-    background:rgb(23, 16, 41);
+    background: rgb(23, 16, 41);
     color: var(--main-color);
     text-align: center;
     font-family: var(--main-font);
@@ -285,18 +281,44 @@ header {
     font-family: var(--secondary-font);
     text-align: center;
 }
+
 .latest-news p {
     color: var(--nav-color);
+}
+
+.timer {
+    padding-top: 20px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+    color: var(--nav-color);
+}
+
+@media (min-width: 900px) {
+    .countdown {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding-bottom: 30px;
+    }
 }
 
 footer {
     background: #161721;
     color: var(--main-color);
     padding-top: 20px;
-    padding-bottom: 20px;;
-    font-family: var(--main-font);
+    padding-bottom: 20px;
+    ; font-family: var(--main-font);
     text-align: center;
 }
+
 .logoimage-footer img {
     width: 60px;
     height: 60px;
@@ -315,14 +337,13 @@ footer {
         flex-direction: row;
         margin-left: 30px;
         padding-top: 10px;
-
     }
 }
-
 
 .navbar a {
     color: var(--main-color);
 }
+
 .navbar a:hover {
     color: var(--nav-color) !important;
 }
@@ -330,7 +351,6 @@ footer {
 .socialicons-footer {
     display: flex;
     justify-content: center;
-
 }
 
 .socialicons-footer a {
