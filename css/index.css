@@ -310,10 +310,35 @@ header {
     }
 }
 
+#contact {
+    background: #161721;
+    color: var(--main-color);
+    text-align: center;
+    font-family: var(--main-font);
+    padding-top: 30px;
+}
+#contact h2 {
+    font-family: var(--secondary-font);
+    padding-bottom: 10px;
+}
+.contact-form {
+    padding-top: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.contact-button {
+    color: var(--nav-color);
+}
+
 footer {
     background: #161721;
     color: var(--main-color);
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     ; font-family: var(--main-font);
     text-align: center;
