@@ -160,7 +160,7 @@ header {
 #tickets {
     background: linear-gradient(0deg, #301d55 0%, #161721 100%);
     color: var(--main-color);
-    position: relative;
+    padding-top: 30px;
 }
 
 #tickets img {
@@ -205,6 +205,7 @@ header {
 .gallery {
     background: linear-gradient(0deg, rgb(11, 11, 22) 0%, rgb(48, 29, 85) 100%);
     text-align: center;
+    padding-top: 30px;
 }
 
 .gallery h2 {
@@ -229,6 +230,7 @@ header {
     color: var(--main-color);
     text-align: center;
     font-family: var(--main-font);
+    padding-top: 30px;
 }
 #line-up img {
     max-width: 200px;
@@ -266,6 +268,7 @@ header {
     text-align: center;
     font-family: var(--main-font);
     margin-top: -20px;
+    padding-top: 30px;
 }
 
 #news img {
@@ -284,4 +287,63 @@ header {
 }
 .latest-news p {
     color: var(--nav-color);
+}
+
+footer {
+    background: #161721;
+    color: var(--main-color);
+    padding-top: 20px;
+    padding-bottom: 20px;;
+    font-family: var(--main-font);
+    text-align: center;
+}
+.logoimage-footer img {
+    width: 60px;
+    height: 60px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+    .navbar {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 30px;
+        padding-top: 10px;
+
+    }
+}
+
+
+.navbar a {
+    color: var(--main-color);
+}
+.navbar a:hover {
+    color: var(--nav-color) !important;
+}
+
+.socialicons-footer {
+    display: flex;
+    justify-content: center;
+
+}
+
+.socialicons-footer a {
+    width: 30px;
+    height: 30px;
+    color: var(--nav-color);
+    text-decoration: none;
+}
+
+.socialicons-footer a:hover {
+    color: var(--soial-hover-color);
+}
+
+footer p {
+    padding-top: 20px;
 }
