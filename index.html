@@ -9,6 +9,8 @@
   <link rel="icon" href="img/icon.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 
@@ -178,6 +180,12 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+      <!--<div class="owl-carousel">
+        <div><img src="img/party-one.webp" alt="party-one"></div>
+        <div><img src="img/party-two.webp" alt="party-two"></div>
+        <div><img src="img/party-three.webp" alt="party-three"></div>
+        <div><img src="img/party-four.webp" alt="party-four"></div>
+      </div>-->
     </div>
     <div id="line-up">
       <h2>EDM Stars</h2>
@@ -354,9 +362,22 @@
     </div>
     <p>© Created by | All rights Reserved</p>
   </footer>
+  <script src="js/index.js"></script>
   <script src="js/countdown.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4 " crossorigin="anonymous "></script>
   <script src="https://kit.fontawesome.com/9a63a66518.js" crossorigin="anonymous "></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+      $(document).ready(function() {
+          $(".owl-carousel").owlCarousel({
+              items: 2,
+              loop: true,
+              center: true,
+              nav: true
+          });
+      });
+  </script>
 </body>
 
 </html>

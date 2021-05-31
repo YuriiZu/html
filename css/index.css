@@ -203,6 +203,7 @@ header {
     background: linear-gradient(0deg, rgb(11, 11, 22) 0%, rgb(48, 29, 85) 100%);
     text-align: center;
     padding-top: 30px;
+    box-sizing: border-box;
 }
 
 .gallery h2 {
@@ -214,6 +215,12 @@ header {
 .gallery p {
     font-family: var(--main-font);
     color: var(--main-color);
+}
+
+.owl-item {
+    max-width: 600px;
+    max-height: 600px;
+    margin: 30px;
 }
 
 #carousel {
@@ -317,10 +324,12 @@ header {
     font-family: var(--main-font);
     padding-top: 30px;
 }
+
 #contact h2 {
     font-family: var(--secondary-font);
     padding-bottom: 10px;
 }
+
 .contact-form {
     padding-top: 10px;
     display: inline-flex;
